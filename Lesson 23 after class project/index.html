@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Data Structure and Arrays</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        h1{
+            color: thistle;
+            text-align: center;
+            border: thistle 10px double;
+            background-color: green;
+        }
+        body{
+            background-image: url(bubbly\ flowers\ copy.jpeg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>Favourite Social Media Platforms</h1>
+    <p id="mine"></p>
+    <p id="world"></p>
+    <p id="others"></p>
+    <H2 style="text-align: center; border: 10px rebeccapurple double; background-color: bisque;">DIFFERENT SOCIAL MEDIA PLATFORMS</H2>
+    <h3 id="join"></h3><br>
+    <h4 id="pop"></h4>
+    <h4 id="2ndpop"></h4>
+
+    <script>
+        var Social_media_platforms = [
+            "Instagram",
+            "Youtube",
+            "Facebook",
+            "Snapchat",
+            "Tiktok",
+            "Whatsapp",
+            "Reddit",
+            "Telegam",
+            "Twitter",
+            "LinkedIn",
+            "Pinterest",
+            "WeChat",
+            "Threads",
+            "QQ",
+            "Twitch",
+            "Discord",
+            "Kuaisohu",
+            "Weibo",
+            "X",
+            "Mastodon",
+            "Rednote(xiaohongshu)"
+        ]
+        document.getElementById("mine").innerHTML = "My favourite social media platform is " + Social_media_platforms[1];
+
+        document.getElementById("world").innerHTML = "As of 2025, the world's favourite social media platform is " + Social_media_platforms[0] + ", chosen by 16.5% of internet users aged 16-64 as their top platform.";
+
+        document.getElementById("others").innerHTML = "Other highly popular platforms globally include " + Social_media_platforms[2] + ", " + "which remains the largest by monthly active users, and " + Social_media_platforms[1] + ", " + Social_media_platforms[5] + ", and " + Social_media_platforms[4];
+
+        document.getElementById("join").innerHTML = Social_media_platforms.join("📲 ");
+
+        document.getElementById("pop").innerHTML = Social_media_platforms; Social_media_platforms.pop()
+        document.getElementById("2ndpop").innerHTML = Social_media_platforms;
+    </script>
+    
+    <footer style="font-size: 200%; color: brown;" class="blockquote-footer"><abbr title="Still by ME">From Google</abbr></footer>
+</body>
+</html>
